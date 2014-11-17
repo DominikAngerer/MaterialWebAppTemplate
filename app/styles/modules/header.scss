@@ -1,0 +1,25 @@
+.main-header {
+	background: $main-header-bg;
+	color: $main-header-font-color;
+	text-align: $main-header-text-align;
+	max-height:58px;
+	position: fixed;
+	z-index:10;
+	width: 100%;
+	left: 0;
+	transition: all 0.3s ease;
+	.toggle-menu {
+		position: absolute;
+		left: 20px;
+		top: 10px;
+		color: $main-header-font-color;
+		font-size: 25px;
+		cursor: pointer;
+	}  
+	@if $main-header-text-align == left {
+		padding-left:65px;
+	}
+	@if $shadows {
+		box-shadow: 0px 0px 15px 3px #999; 
+	}
+}

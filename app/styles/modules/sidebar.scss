@@ -1,0 +1,37 @@
+.main-nav {
+	margin-top:58px;
+	position: fixed;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background: $left-nav-bg;
+	color: $left-nav-font-color;
+	transition: width 0.3s ease;
+	a {
+		display: block;
+		background: $left-nav-element-bg;
+		color: $left-nav-font-color;
+		padding: 15px;
+		&:hover, &:focus {
+			background: $left-nav-element-bg-hover;
+		}
+	}
+	.separator {
+		border-bottom: 1px solid $left-nav-seperator-color;
+		padding: 0 0 8px 0;
+	}
+	@if $shadows {
+		box-shadow: 3px 0 15px 0px #999;
+	}
+	@if $left-nav-allow-scroll {
+		overflow: scroll;
+	}
+}
+
+.main-nav-check {
+	display: none;
+}
+
+#main-nav-check:checked + #main-nav {
+	width:235px;
+}
