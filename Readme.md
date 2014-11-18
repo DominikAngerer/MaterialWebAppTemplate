@@ -5,7 +5,7 @@ The main reason why I'm doing this is to have a look at the Android material gui
 
 ## Template in action:
 ![Closed Sidebar](http://adtime.at/projects/github/mwat-closed-sidebar-small.png)
-![Open Sidebar](http://adtime.at/projects/github/mwat-open-sidebar-small.png)
+![Open Sidebar](http://adtime.at/projects/github/mwat-open-sidebar-green-small.png)
 
 Also have a look at [this running example].
 
