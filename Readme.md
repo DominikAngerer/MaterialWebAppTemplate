@@ -4,8 +4,8 @@
 The main reason why I'm doing this is to have a look at the Android material guidelines and get them into the world of web with a simple and easy to customize markup and style.
 
 ## Template in action:
-![Closed Sidebar](http://adtime.at/projects/github/mwat-closed-sidebar-small.png)
-![Open Sidebar](http://adtime.at/projects/github/mwat-open-sidebar-small.png)
+![Closed Orange Sidebar](http://adtime.at/projects/github/mwat-closed-sidebar-small.png)
+![Open Green Sidebar](http://adtime.at/projects/github/mwat-open-sidebar-green.png)
 
 Also have a look at [this running example].
 
