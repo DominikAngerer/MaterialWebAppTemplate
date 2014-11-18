@@ -3,23 +3,35 @@
 		position:fixed;
 		border:none;
 		right:37px;
-		background:#db4437;
-		color:#ffffff;
+		background:$sub-hover-button-color;
+		color:$sub-hover-button-font-color;
 		border-radius:50%;
 		box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 		width:40px;
 		height:40px;
+		transition: box-shadow 150ms cubic-bezier(0,0,.2,1);
 		&.main {
 			right:28px;
 			bottom:20px;
 			width:56px;
 			height:56px;
-			background:green;
+			color:$main-hover-button-font-color;
+			background:$main-hover-button-color;
 		}
-		@for $i from 1 through 10 {
-		  	&.onHover-#{$i}{
-		   		bottom: 45px + ($i*50px);
+		@for $i from 1 through $max-sub-hover-buttons {
+			&.onHover-#{$i}{
+				bottom: 45px + ($i*50px);
+				opacity:0;
+				transition: opacity .20s ease-in-out;
+				transition-delay: (0.10s*($max-sub-hover-buttons - $i));
 			}
+			&.main:hover ~ .onHover-#{$i}{
+				opacity:1;
+				transition-delay: (0.10s*$i);
+			}
+		}	
+		&.main:hover{
+			box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.48);
 		}
 	}
 }

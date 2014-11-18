@@ -1,13 +1,19 @@
-$left-nav-bg:#f9f9f9;					// left nav default background color	
-$left-nav-element-bg:#f9f9f9;			// left nav background color of <a>'s
-$left-nav-element-bg-hover:#ECECEC;		// left nav background hover color of <a>'s
-$left-nav-font-color:#000;				// left nav font color
-$left-nav-seperator-color:#e5e5e5;		// left nav seperator color between elements (<a>'s)
-$left-nav-allow-scroll:true !default;
+$left-nav-bg:#f9f9f9;						// left nav default background color	
+$left-nav-element-bg:#f9f9f9;				// left nav background color of <a>'s
+$left-nav-element-bg-hover:#ECECEC;			// left nav background hover color of <a>'s
+$left-nav-font-color:#000;					// left nav font color
+$left-nav-seperator-color:#e5e5e5;			// left nav seperator color between elements (<a>'s)
+$left-nav-allow-scroll:true !default;		// allow scrolling in the sidebar
 
-$main-header-bg:#1E824C;				// main header background color
-$main-header-bg-hover:#00B16A;			// main header background hover color - not used at the moment
-$main-header-font-color:#ffffff;		// main header font color
-$main-header-text-align:center;			// main header text align (supported: left & center)
+$main-header-bg:#1E824C;					// main header background color
+$main-header-bg-hover:#00B16A;				// main header background hover color - not used at the moment
+$main-header-font-color:#ffffff;			// main header font color
+$main-header-text-align:center;				// main header text align (supported: left & center)
 
-$shadows:true !default;					// enables 'materials' shadow design
+$shadows:true !default;						// enables 'materials' shadow design
+
+$main-hover-button-color:$main-header-bg;	// main hover button color
+$sub-hover-button-color:#db4437;			// sub hover button color
+$main-hover-button-font-color:$main-header-font-color; 	// main font color for hover button
+$sub-hover-button-font-color:$main-header-font-color;	// sub font color for hover button
+$max-sub-hover-buttons:5;
