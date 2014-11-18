@@ -2,7 +2,7 @@
 	button {
 		position:fixed;
 		border:none;
-		right:49px;
+		right:37px;
 		background:#db4437;
 		color:#ffffff;
 		border-radius:50%;
@@ -10,15 +10,15 @@
 		width:40px;
 		height:40px;
 		&.main {
-			right:40px;
-			bottom:30px;
+			right:28px;
+			bottom:20px;
 			width:56px;
 			height:56px;
 			background:green;
 		}
 		@for $i from 1 through 10 {
 		  	&.onHover-#{$i}{
-		   		bottom: 50px + ($i*50px);
+		   		bottom: 45px + ($i*50px);
 			}
 		}
 	}
