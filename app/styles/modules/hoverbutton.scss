@@ -1,4 +1,20 @@
 .hover-button-group {
+	.sub-hover-button-group {
+		height:0px;
+		width: 100px;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		@for $i from 1 through $max-sub-hover-buttons {
+			&:hover button.onHover-#{$i}{
+				opacity:1;
+				transition-delay: (0.10s*$i);
+			}
+		}
+		&:hover{
+			height: 100px + ($max-sub-hover-buttons*50px);
+		}
+	}
 	button {
 		position:fixed;
 		border:none;
@@ -35,22 +51,6 @@
 			box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.48);
 		}
 		&.main:hover ~ .sub-hover-button-group {
-			height: 100px + ($max-sub-hover-buttons*50px);
-		}
-	}
-	.sub-hover-button-group {
-		height:0px;
-		width: 100px;
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		@for $i from 1 through $max-sub-hover-buttons {
-			&:hover button.onHover-#{$i}{
-				opacity:1;
-				transition-delay: (0.10s*$i);
-			}
-		}
-		&:hover{
 			height: 100px + ($max-sub-hover-buttons*50px);
 		}
 	}
